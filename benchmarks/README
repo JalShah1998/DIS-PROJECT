@@ -1,0 +1,22 @@
+How to run the benchmark?
+-------------------------
+
+1. First, do a make clean and make
+	$ make clean
+	$ make
+
+2. Before running the benchmark, run 
+
+	$ ./genRecord.sh
+
+The genRecord generates data for external_cal.
+
+3. Running benchmarks
+
+	$ ./external_cal 6 
+
+Here 6 refers to the number of user-level threads to run. Similarly,
+
+	$ ./parallelCal 6
+	$ ./vector_multiply 6
+
